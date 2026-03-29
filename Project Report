@@ -1,0 +1,31 @@
+Project Report: 
+Credit Card Fraud Risk Analysis
+
+Developer: Riya Sharma
+
+Tool Used: Power BI Desktop
+
+Dataset: Kaggle Credit Card Fraud Detection (284,807 Transactions)
+
+1. Executive Summary
+This project involves creating an end-to-end Analytical Dashboard to monitor and detect fraudulent credit card transactions. The primary goal was to handle a highly imbalanced dataset and extract actionable insights for a financial risk management team.
+
+2. Key Business Questions Addressed
+•	What is the percentage of Fraud vs. Genuine transactions?
+•	At what time of the day do most fraudulent activities occur?
+•	Which transaction amount ranges are most vulnerable to fraud?
+•	Which specific high-value transactions need immediate manual audit?
+
+3. Technical Workflow
+•	Data Cleaning: Handled time-series data by converting 'Time' (seconds) into 'Hourly' buckets for trend analysis.
+•	DAX Implementation: Created custom measures for Total Fraud Cases, Fraud %, and Total Fraud Amount to provide precise KPIs.
+•	Data Modeling: Implemented conditional columns to group transaction amounts into ranges ($0-50, $51-500, $500+).
+
+4. Major Insights & Findings
+•	Data Imbalance: Fraudulent transactions account for only 0.18% of the total data, requiring focused monitoring.
+•	Frequency Pattern: A significant spike in fraud was detected during the 11th and 26th hours, suggesting peak vulnerability periods.
+•	Volume vs. Value: While high-value frauds exist, the highest frequency of fraud (279 cases) occurred in the $0-50 range, indicating a pattern of "small-ticket" testing by fraudsters.
+
+5. Feature: High-Risk Audit Trail
+A dedicated audit table was integrated to allow investigators to filter and sort fraudulent transactions by amount and time, ensuring a quick response to high-priority threats.
+
